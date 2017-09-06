@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <!-- Modernizr -->
+    <script src="js/vendor/modernizr.min.js"></script>
+
+    <!-- Stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom-scrollbar.css?v=0.2">
+    <link rel="stylesheet" href="css/jquery-ui.structure.css?v=0.2">
+    <link rel="stylesheet" href="css/jquery-steps.css?v=0.2">
+    <link rel="stylesheet" href="css/style.css?v=0.2">
+    
+    <title>SPM &raquo; Worker comparison</title>
+</head>
+   
+
+<body class="page-home page-panel">
+    
+    <!-- Sidebar navigation -->
+    <div class="sidebar">
+
+        <nav class="sidebar-menu">
+    <ul>
+        <li>
+            <a href="panel-index.html" class="transition sidebar-item " title="Home">
+                <div class="sidebar-item-icon sidebar-icon-home"></div> 
+                <span class="sidebar-title">Home</span>
+            </a>
+        </li>
+        <li>
+            <a href="my-team.html" class="transition sidebar-item " title="My team">
+                <div class="sidebar-item-icon sidebar-icon-my-team"></div> 
+                <span class="sidebar-title">My Team</span>
+            </a>
+        </li>
+        <li>
+            <a href="personal-information.html" class="transition sidebar-item " title="Personal information">
+                <div class="sidebar-item-icon sidebar-icon-personal-information"></div> 
+                <span class="sidebar-title">Personal Information</span>
+            </a>
+        </li>
+        <li>
+            <a href="job-information.html" class="transition sidebar-item " title="Workers comparison">
+                <div class="sidebar-item-icon sidebar-icon-job-info"></div> 
+                <span class="sidebar-title">Job Information</span>
+            </a>
+        </li>
+        <li>
+            <a href="compensation.html" class="transition sidebar-item " title="Compensation">
+                <div class="sidebar-item-icon sidebar-icon-compensation"></div> 
+                <span class="sidebar-title">Compensation</span>
+            </a>
+        </li>
+        <li>
+            <a href="benefits.html" class="transition sidebar-item " title="Benefits">
+                <div class="sidebar-item-icon sidebar-icon-benefits"></div> 
+                <span class="sidebar-title">Benefits</span>
+            </a>
+        </li>
+        <li>
+            <a href="time-off.html" class="transition sidebar-item " title="Time ff">
+                <div class="sidebar-item-icon sidebar-icon-time-off"></div> 
+                <span class="sidebar-title">Time Off</span>
+            </a>
+        </li>
+        <li>
+            <a href="org-chart.html" class="transition sidebar-item " title="Org chart">
+                <div class="sidebar-item-icon sidebar-icon-org-chart"></div> 
+                <span class="sidebar-title">Org Chart</span>
+            </a>
+        </li>
+        <li>
+            <a href="workers-comparison.html" class="transition sidebar-item  sidebar-item--active " title="Workers comparison">
+                <div class="sidebar-item-icon sidebar-icon-comparison"></div> 
+                <span class="sidebar-title">Workers Comparison</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="sidebar-item" title="Development">
+                <div class="sidebar-item-icon sidebar-icon-development"></div> 
+                <span class="sidebar-title">Development</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="sidebar-item" title="Expenses">
+                <div class="sidebar-item-icon sidebar-icon-expenses"></div> 
+                <span class="sidebar-title">Expenses</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="sidebar-item" title="Documentation">
+                <div class="sidebar-item-icon sidebar-icon-documentation"></div> 
+                <span class="sidebar-title">Reports</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="sidebar-item" title="Audit">
+                <div class="sidebar-item-icon sidebar-icon-audit"></div> 
+                <span class="sidebar-title">Audit</span>
+            </a>
+        </li>      
+        
+        
+    </ul>
+
+    <div class="sidebar-toggler js-sidebar-toggle">
+        <svg enable-background="new 0 0 32 32" height="32px" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M24.291,14.276L14.705,4.69c-0.878-0.878-2.317-0.878-3.195,0l-0.8,0.8c-0.878,0.877-0.878,2.316,0,3.194  L18.024,16l-7.315,7.315c-0.878,0.878-0.878,2.317,0,3.194l0.8,0.8c0.878,0.879,2.317,0.879,3.195,0l9.586-9.587  c0.472-0.471,0.682-1.103,0.647-1.723C24.973,15.38,24.763,14.748,24.291,14.276z" fill="#175d9d"></path></svg>
+    </div>
+
+</nav>
+<!-- /.sidebar-menu -->        
+    </div>
+    <!-- /.sidebar -->
+
+    <main class="app">
+
+        <div class="app-wrapper">
+
+            <div class="navbar">
+
+    <div class="sidebar-logo-block">
+
+        <a href="panel-index.html" class="sidebar-logo" title="Go to index">
+            <img class="sidebar-logo-image" src="img/sidebar/sidebar-logo.svg" alt="Go to index" title="Go to index"> 
+        </a>
+
+    </div>
+    <!-- /.sidebar-logo-block -->
+            
+    <div class="navbar-toggle-search">
+
+        <form action="#" class="navbar-search">
+            <input type="submit" value="" class="navbar-search-submit">
+            <input type="text" class="navbar-search-input" placeholder="Search">
+        </form>
+        <!-- /.navbar-search -->
+
+    </div>
+
+    <ul class="navbar-actions">
+        <li>
+            <a href="#" class="navbar-action" title="Show my calendar">
+                <div class="navbar-icon navbar-icon-calendar">
+                    <span class="badge badge--nav">5</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="navbar-action" title="Show my messages">
+                <div class="navbar-icon navbar-icon-mail">
+                    <span class="badge badge--nav">15</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="navbar-action" title="Show all notifications">
+                <div class="navbar-icon navbar-icon-notification">
+                    <span class="badge badge--nav">99+</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <div class="navbar-user">
+
+                <img class="navbar-avatar" src="img/navbar/sample-avatar.png" alt="Samruddhi Vairat" title="Samruddhi Vairat">
+                <span class="navbar-name">
+                    Samruddhi <br>
+                    Vairat
+                </span>
+                <div class="navbar-dropdown js-box-dropdown">
+                    <ul class="take-action box-dropdown-content js-box-dropdown-content">
+                        <li><a href="#">User Profile</a></li>
+                        <li><a href="#">Admin Options</a></li>
+                        <li><a href="#">Proxy Options</a></li>
+                        <li><a href="#">Change Language</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </li>
+    </ul>
+    <!-- /.navbar-actions -->
+
+</div>
+<!-- /.navbar -->
+            <div class="app-container">
+
+                <div class="container">
+
+                    <div class="page-nav">
+
+                        <ul class="breadcrumbs">
+                            <li>
+                                <a href="panel-index.html" class="breadcrumbs-item">Home</a>
+                            </li>
+                            <li>
+                                <a href="workers-comparison.html" class="breadcrumbs-item active">Workers Comparison</a>
+                            </li>
+                        </ul>
+                        <!-- /.breadcrumbs -->
+
+                        <ul class="help-links">
+                            <li>
+                                <!-- Documentation Icon -->
+                                <a href="#" class="help-link-documentation" title="Documentation">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92.4 122.4"><path d="M91.2,122.4H1.2A1.22,1.22,0,0,1,0,121.2V1.2A1.22,1.22,0,0,1,1.2,0h50A11.18,11.18,0,0,1,62.4,11.2V30H81.2A11.18,11.18,0,0,1,92.4,41.2v80A1.16,1.16,0,0,1,91.2,122.4ZM2.4,120H89.9V41.2a8.81,8.81,0,0,0-8.8-8.8H61.2A1.22,1.22,0,0,1,60,31.2v-20a8.81,8.81,0,0,0-8.8-8.8H2.4Z" fill="#175d9d"/><path d="M88.2,35.3h0a1.09,1.09,0,0,1-.9-.4,8.69,8.69,0,0,0-6.2-2.5H61.2A1.22,1.22,0,0,1,60,31.2v-20A8.38,8.38,0,0,0,57.4,5a1.49,1.49,0,0,1-.4-.9,1.3,1.3,0,0,1,.8-1.2,1.24,1.24,0,0,1,1.4.3l30,30a1.24,1.24,0,0,1,.3,1.4A1.36,1.36,0,0,1,88.2,35.3ZM62.4,30H81.2a4.87,4.87,0,0,1,1.2.1l-20-20c0,.4.1.8.1,1.2V30Z" fill="#175d9d"/><rect x="24.2" y="53.2" width="44" height="8" fill="#175d9d"/><rect x="24.2" y="67.2" width="44" height="8" fill="#175d9d"/><rect x="24.2" y="81.2" width="34" height="8" fill="#175d9d"/></svg>
+                                </a>
+                            </li>
+                            <li>
+                                <!-- Help Icon -->
+                                <a href="#" class="help-link-help" title="Help">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><circle cx="25" cy="25" r="24" fill="none" stroke="#175d9d" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><rect width="50" height="50" fill="none"/><path d="M23.53,30.41V28.94a4.75,4.75,0,0,1,1.08-3.23l2.4-3.3c1.25-1.72,1.68-2.55,1.68-3.77a3.22,3.22,0,0,0-3.48-3.34c-2,0-3.3,1.22-3.73,3.41a.32.32,0,0,1-.4.29l-2.26-.4a.32.32,0,0,1-.29-.4,6.42,6.42,0,0,1,6.74-5.7c3.87,0,6.49,2.55,6.49,6.1A7.47,7.47,0,0,1,30,23.27l-2.4,3.3a3.7,3.7,0,0,0-.93,2.69V30.4a.34.34,0,0,1-.36.36H23.89A.33.33,0,0,1,23.53,30.41Zm-.18,3.44a.34.34,0,0,1,.36-.36h2.73a.34.34,0,0,1,.36.36v3.08a.34.34,0,0,1-.36.36H23.71a.34.34,0,0,1-.36-.36Z" fill="#175d9d"/></svg>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="container">
+
+                    <div class="row">
+
+                        <div class="col-xs-12 col-md-4">
+
+                            <div class="box box--bg">
+
+                                <ul class="box-headings">
+
+                                    <li class="box-heading active">
+                                        <div class="box-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70.62 50"><title>icon-workers-comparison</title><rect x="27.93" y="27.68" width="14.76" height="2.2" fill="#bdccd4"/><rect x="27.93" y="39.74" width="14.76" height="2.2" fill="#bdccd4"/><polygon points="8.78 22.89 6.58 22.89 6.58 15.78 16.43 5.92 28.73 5.92 28.73 8.12 17.35 8.12 8.78 16.69 8.78 22.89" fill="#bdccd4"/><polygon points="64.05 22.89 61.85 22.89 61.85 16.69 53.28 8.12 41.89 8.12 41.89 5.92 54.19 5.92 64.05 15.78 64.05 22.89" fill="#bdccd4"/><path d="M29.83,7h-2.2A4.82,4.82,0,0,0,18,7h-2.2a7,7,0,0,1,14,0Z" fill="#bdccd4"/><path d="M54.84,7h-2.2A4.82,4.82,0,0,0,43,7h-2.2a7,7,0,0,1,14,0Z" fill="#bdccd4"/><path d="M35.31,14.7A7.69,7.69,0,0,1,27.63,7h2.2a5.48,5.48,0,1,0,11,0H43A7.69,7.69,0,0,1,35.31,14.7Z" fill="#bdccd4"/><rect x="34.21" y="33.71" width="2.2" height="2.2" fill="#bdccd4"/><path d="M55.43,50A15.19,15.19,0,1,1,70.62,34.81,15.21,15.21,0,0,1,55.43,50Zm0-28.18a13,13,0,1,0,13,13A13,13,0,0,0,55.43,21.82Z" fill="#bdccd4"/><path d="M55.43,45.85a11,11,0,1,1,11-11A11,11,0,0,1,55.43,45.85Zm0-19.87a8.84,8.84,0,1,0,8.84,8.84A8.85,8.85,0,0,0,55.43,26Z" fill="#bdccd4"/><path d="M50.75,34.81h-2.2a6.89,6.89,0,0,1,6.88-6.88v2.2A4.69,4.69,0,0,0,50.75,34.81Z" fill="#bdccd4"/><path d="M15.19,50A15.19,15.19,0,1,1,30.38,34.81,15.21,15.21,0,0,1,15.19,50Zm0-28.18a13,13,0,1,0,13,13A13,13,0,0,0,15.19,21.82Z" fill="#bdccd4"/><path d="M15.19,45.85a11,11,0,1,1,11-11A11,11,0,0,1,15.19,45.85Zm0-19.87A8.84,8.84,0,1,0,24,34.81,8.85,8.85,0,0,0,15.19,26Z" fill="#bdccd4"/><path d="M10.51,34.81H8.31a6.89,6.89,0,0,1,6.88-6.88v2.2A4.69,4.69,0,0,0,10.51,34.81Z" fill="#bdccd4"/></svg>
+                                        </div>
+                                        <h2 class="box-title">Workers Comparison</h2>
+                                        <ul class="box-actions">
+                                            <li>
+                                                <a href="#" title="Help">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><circle cx="25" cy="25" r="24" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"></circle><rect width="50" height="50" fill="none"></rect><path d="M23.53,30.41V28.94a4.75,4.75,0,0,1,1.08-3.23l2.4-3.3c1.25-1.72,1.68-2.55,1.68-3.77a3.22,3.22,0,0,0-3.48-3.34c-2,0-3.3,1.22-3.73,3.41a.32.32,0,0,1-.4.29l-2.26-.4a.32.32,0,0,1-.29-.4,6.42,6.42,0,0,1,6.74-5.7c3.87,0,6.49,2.55,6.49,6.1A7.47,7.47,0,0,1,30,23.27l-2.4,3.3a3.7,3.7,0,0,0-.93,2.69V30.4a.34.34,0,0,1-.36.36H23.89A.33.33,0,0,1,23.53,30.41Zm-.18,3.44a.34.34,0,0,1,.36-.36h2.73a.34.34,0,0,1,.36.36v3.08a.34.34,0,0,1-.36.36H23.71a.34.34,0,0,1-.36-.36Z" fill="#fff"></path></svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                                <!-- /.box-headings -->
+
+                                <div class="box-content box-content--tall">
+
+                                    <div class="box-tab active">
+
+                                        <div class="box-inner">
+
+                                            <div class="box-nav">
+
+                                                <form action="#" class="box-search">
+                                                    <input type="submit" value="" class="navbar-search-submit">
+                                                    <input type="text" class="search navbar-search-input" placeholder="Search">
+                                                </form>
+
+                                                <div class="box-filter">
+
+                                                    <span class="box-filter-text">
+                                                        Filter
+                                                        <span class="box-filter-arrow"></span>
+                                                    </span>
+
+                                                </div>
+
+                                            </div>
+                                            <!-- /.box-nav -->
+
+                                            <div class="compare-single-wrapper" id="users">
+
+                                                <div class="compare-list list">
+
+                                                    <div class="compare-single">
+                                                        
+                                                        <input type="checkbox" id="compare-01" class="compare-checkbox">
+                                                        <label for="compare-01" class="compare-label"></label>
+                                                        <img src="img/global/sample-avatar-2.jpg" alt="" class="compare-avatar">
+                                                        <div class="compare-user-info">
+                                                            <strong class="name compare-user-name">Maria Torres</strong>
+                                                            <p class="compare-user-details">
+                                                                Sales Manager <br>
+                                                                000132
+                                                            </p>
+                                                        </div>
+
+                                                    </div>
+                                                    <!-- /.compare-single -->
+
+                                                    <div class="compare-single">
+                                                        
+                                                        <input type="checkbox" id="compare-02" class="compare-checkbox">
+                                                        <label for="compare-02" class="compare-label"></label>
+                                                        <img src="img/global/sample-avatar.jpg" alt="" class="compare-avatar">
+                                                        <div class="compare-user-info">
+                                                            <strong class="name compare-user-name">Samruddhi Vairat</strong>
+                                                            <p class="compare-user-details">
+                                                                Director <br>
+                                                                000661
+                                                            </p>
+                                                        </div>
+
+                                                    </div>
+                                                    <!-- /.compare-single -->
+
+                                                    <div class="compare-single">
+                                                        
+                                                        <input type="checkbox" id="compare-03" class="compare-checkbox">
+                                                        <label for="compare-03" class="compare-label"></label>
+                                                        <img src="img/global/sample-avatar-4.jpg" alt="" class="compare-avatar">
+                                                        <div class="compare-user-info">
+                                                            <strong class="name compare-user-name">Mariano Kuphal</strong>
+                                                            <p class="compare-user-details">
+                                                                Department Manager <br>
+                                                                000665
+                                                            </p>
+                                                        </div>
+
+                                                    </div>
+                                                    <!-- /.compare-single -->
+
+                                                    <div class="compare-single">
+                                                        
+                                                        <input type="checkbox" id="compare-04" class="compare-checkbox">
+                                                        <label for="compare-04" class="compare-label"></label>
+                                                        <img src="img/global/sample-avatar-5.jpg" alt="" class="compare-avatar">
+                                                        <div class="compare-user-info">
+                                                            <strong class="name compare-user-name">Ash Manoj</strong>
+                                                            <p class="compare-user-details">
+                                                                Sales Manager <br>
+                                                                000225
+                                                            </p>
+                                                        </div>
+
+                                                    </div>
+                                                    <!-- /.compare-single -->
+
+                                                    <div class="compare-single">
+                                                        
+                                                        <input type="checkbox" id="compare-05" class="compare-checkbox">
+                                                        <label for="compare-05" class="compare-label"></label>
+                                                        <img src="img/global/sample-avatar-3.jpg" alt="" class="compare-avatar">
+                                                        <div class="compare-user-info">
+                                                            <strong class="name compare-user-name">Sara Lindgren</strong>
+                                                            <p class="compare-user-details">
+                                                                Director <br>
+                                                                000223
+                                                            </p>
+                                                        </div>
+
+                                                    </div>
+                                                    <!-- /.compare-single -->
+
+                                                    <div class="compare-single">
+                                                        
+                                                        <input type="checkbox" id="compare-06" class="compare-checkbox">
+                                                        <label for="compare-06" class="compare-label"></label>
+                                                        <img src="img/global/sample-avatar-6.jpg" alt="" class="compare-avatar">
+                                                        <div class="compare-user-info">
+                                                            <strong class="name compare-user-name">Sandra Bothha</strong>
+                                                            <p class="compare-user-details">
+                                                                Department Manager <br>
+                                                                003265
+                                                            </p>
+                                                        </div>
+
+                                                    </div>
+                                                    <!-- /.compare-single -->
+
+                                                </div>
+                                                <!-- /.c-list -->
+
+                                            </div>
+
+                                        </div>
+                                        <!-- /.box-inner -->
+
+                                    </div>
+                                    <!-- /.box-tab -->
+
+                                </div>
+                                <!-- /.box-content -->
+
+                            </div>
+
+                        </div>
+                        <div class="col-xs-12 col-md-4 worker-col worker-col-01">
+                            
+                            <div class="box box--bg">
+
+                                <ul class="box-headings">
+
+                                    <li class="box-heading active">
+                                        <div class="box-icon box-icon--close js-box-close" data-checkbox="compare-01">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.75 27.75"><title>icon-close</title><path d="M.54,3.44l3-3L13.9,10.79,24.69,0l3.06,3.06L17,13.85,27.48,24.37l-3,3L14,16.85,3.06,27.75,0,24.69l10.9-10.9Z" fill="#bdccd4"/></svg>
+                                        </div>
+                                        <h2 class="box-title">Maria Torres</h2>
+                                    </li>
+
+                                </ul>
+                                <!-- /.box-headings -->
+
+                                <div class="box-content box-content--tall">
+
+                                    <div class="box-tab active">
+
+                                        <div class="box-inner">
+
+                                            <div class="box-nav">
+
+                                                <h2 class="box-nav-title">Adjustment for:</h2>
+
+                                                <div class="box-nav-icons">
+
+                                                    <div class="box-nav-icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.59 50"><title>icon-adjustment-01</title><path d="M38.59,50H0V0H28.27L38.59,10.32ZM1.82,48.18H36.77V11.08L27.52,1.82H1.82Z" fill="#a2bed8"/><polygon points="27.21 11.38 37.55 11.38 27.21 1.04 27.21 11.38" fill="#a2bed8"/><line x1="9.44" y1="10.76" x2="19.7" y2="10.76" fill="#a2bed8"/><rect x="9.44" y="9.85" width="10.26" height="1.82" fill="#a2bed8"/><line x1="9.44" y1="25" x2="28.4" y2="25" fill="#a2bed8"/><rect x="9.44" y="24.09" width="18.97" height="1.82" fill="#a2bed8"/><line x1="9.44" y1="19.54" x2="28.4" y2="19.54" fill="#a2bed8"/><rect x="9.44" y="18.62" width="18.97" height="1.82" fill="#a2bed8"/><line x1="9.44" y1="30.46" x2="28.4" y2="30.46" fill="#a2bed8"/><rect x="9.44" y="29.55" width="18.97" height="1.82" fill="#a2bed8"/><line x1="9.44" y1="36.84" x2="28.4" y2="36.84" fill="#a2bed8"/><rect x="9.44" y="35.93" width="18.97" height="1.82" fill="#a2bed8"/></svg>
+                                                    </div>
+                                                    <div class="box-nav-icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62.56 50"><title>icon-adjustment-02</title><path d="M58,50H4.53V47.91A2.44,2.44,0,0,0,7,45.47V10.7H62.56V45.47A4.54,4.54,0,0,1,58,50ZM8.36,47.91H58a2.44,2.44,0,0,0,2.44-2.44V12.79H9.07V45.47A4.5,4.5,0,0,1,8.36,47.91Z" fill="#a2bed8"/><path d="M4.53,50A4.54,4.54,0,0,1,0,45.47V0H22.41l4.65,4.65h35.5V8.72H60.47v-2H26.19L21.54,2.09H2.09V45.47a2.44,2.44,0,0,0,2.44,2.44Z" fill="#a2bed8"/><rect x="11.51" y="43.26" width="46.51" height="2.09" fill="#a2bed8"/><polygon points="34.77 41.49 22.94 29.66 29.49 29.66 29.49 19.29 31.59 19.29 31.59 31.75 27.99 31.75 34.77 38.53 41.54 31.75 37.95 31.75 37.95 19.29 40.04 19.29 40.04 29.66 46.6 29.66 34.77 41.49" fill="#a2bed8"/><rect x="6.86" y="4.65" width="2.33" height="2.09" fill="#a2bed8"/><rect x="11.51" y="4.65" width="2.33" height="2.09" fill="#a2bed8"/><rect x="16.16" y="4.65" width="2.33" height="2.09" fill="#a2bed8"/></svg>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                            <!-- /.box-nav -->
+
+                                            <div class="compare-single-wrapper">
+
+                                                <div class="js-scrollbar js-scrollbar--tall">
+
+                                                    <div class="person person--inline">
+
+                                                        <div class="person-photo">
+                                                            <img src="img/global/sample-avatar-2.jpg" alt="Samruddhi Vairat" title="Samruddhi Vairat">
+                                                        </div>
+                                                        <!-- /.person-photo -->
+
+                                                        <div class="person-data">
+                                                            <h3 class="person-name">Maria Torres</h3>
+                                                            <div class="person-position">Department Manager</div>
+                                                            <span class="person-pin">000132</span>
+                                                        </div>
+                                                        <!-- /.person-data -->
+
+                                                    </div>
+                                                    <!-- /.person person-inline -->
+
+                                                    <div class="toggler">
+
+                                                        <div class="toggler-bar js-toggler-bar">
+                                                            <h2 class="toggler-title">Current job</h2>
+                                                            <span class="box-filter-arrow"></span>
+                                                        </div>
+                                                        <!-- /.toggler-bar -->
+
+                                                        <div class="toggler-content">
+
+                                                            <div class="toggler-content-inner">
+
+                                                                <table class="table">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td><span class="table-label">Position:</span></td>
+                                                                            <td>Department Manager</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><span class="table-label">Manager:</span></td>
+                                                                            <td>Susan Stainberg</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><span class="table-label">Organisation:</span>:</td>
+                                                                            <td>Global Support Center</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><span class="table-label">Grade:</span></td>
+                                                                            <td>Management</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><span class="table-label">Grade profile:</span></td>
+                                                                            <td>Sweden</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+
+                                                            </div>
+
+                                                        </div>
+                                                        <!-- /.toggler-content -->
+
+                                                    </div>
+                                                    <!-- /.toggler -->
+
+                                                    <div class="toggler">
+
+                                                        <div class="toggler-bar js-toggler-bar">
+                                                            <h2 class="toggler-title">Performance</h2>
+                                                            <span class="box-filter-arrow"></span>
+                                                        </div>
+                                                        <!-- /.toggler-bar -->
+
+                                                        <div class="toggler-content">
+
+                                                            <div class="toggler-content-inner">
+
+                                                                <table class="table">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td><span class="table-label">Previous review rating::</span></td>
+                                                                            <td>3 - Meets Expectations</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+
+                                                                <a href="#" class="compare-view-history">View history</a>
+
+                                                            </div>
+
+                                                        </div>
+                                                        <!-- /.toggler-content -->
+
+                                                    </div>
+                                                    <!-- /.toggler -->
+
+                                                    <div class="toggler">
+
+                                                        <div class="toggler-bar js-toggler-bar">
+                                                            <h2 class="toggler-title">Compensation</h2>
+                                                            <span class="box-filter-arrow"></span>
+                                                        </div>
+                                                        <!-- /.toggler-bar -->
+
+                                                        <div class="toggler-content">
+
+                                                            <div class="toggler-content-inner">
+
+                                                                <div class="compensation-payrange">
+
+                                                                    <div class="compensation-icon">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90"><title>icon-compensation</title><path d="M49,46.35V44.1a8.4,8.4,0,0,0-2.06-16.54H43.08a3.4,3.4,0,0,1,0-6.8h9.74a2.5,2.5,0,0,0,0-5H49v-2a2.5,2.5,0,1,0-5,0v2h-.89a8.4,8.4,0,0,0,0,16.8h3.84a3.4,3.4,0,0,1,0,6.8H37.18a2.5,2.5,0,0,0,0,5H44v2a2.5,2.5,0,1,0,5,0Z" fill="#f39638"/><path d="M87.5,85h-38c6.66-11,25-42.56,25-55.5a29.5,29.5,0,0,0-59,0c0,12.93,18.38,44.48,25,55.5H2.5a2.5,2.5,0,0,0,0,5h85a2.5,2.5,0,0,0,0-5ZM45,5A24.53,24.53,0,0,1,69.5,29.5c0,10.66-16.1,39.38-24.5,53.23C36.59,68.88,20.49,40.16,20.49,29.5A24.53,24.53,0,0,1,45,5Z" fill="#f39638"/></svg>
+                                                                    </div>
+
+                                                                    <div class="compensation-data">
+                                                                        <div class="compensation-text">Pay range</div>
+                                                                        <div class="compensation-amount">
+                                                                            700, 000 - 975, 000
+                                                                        </div>
+                                                                        <!-- /.pay-amount -->
+                                                                        <div class="compensation-cur">Sek annual</div>
+                                                                    </div>
+                                                                    <!-- /.compensation-data -->
+
+                                                                </div>
+                                                                <!-- /.compensation-payrange -->
+
+                                                                <table class="table-compensation">
+                                                                    <tr>
+                                                                        <th>Compensation basis</th>
+                                                                        <th>Current</th>
+                                                                        <th>New</th>
+                                                                        <th>Currency</th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <strong>On target earnings</strong>
+                                                                        </td>
+                                                                        <td>
+                                                                            <strong>962, 500, 00</strong> <br>
+                                                                            143, 123, 75
+                                                                        </td>
+                                                                        <td>
+                                                                            <strong>875, 500, 00</strong> <br>
+                                                                            130, 112, 75
+                                                                        </td>
+                                                                        <td>
+                                                                            <strong>SEK</strong> <br>
+                                                                            USD
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <strong>Total Base Pay</strong>
+                                                                        </td>
+                                                                        <td>
+                                                                            <strong>922, 120, 00</strong> <br>
+                                                                            343, 123, 75
+                                                                        </td>
+                                                                        <td>
+                                                                            <strong>375, 500, 00</strong> <br>
+                                                                            135, 112, 12
+                                                                        </td>
+                                                                        <td>
+                                                                            <strong>SEK</strong> <br>
+                                                                            USD
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <strong>Total Salary &amp; Allowances</strong>
+                                                                        </td>
+                                                                        <td>
+                                                                            <strong>922, 120, 00</strong> <br>
+                                                                            343, 123, 75
+                                                                        </td>
+                                                                        <td>
+                                                                            <strong>375, 500, 00</strong> <br>
+                                                                            135, 112, 12
+                                                                        </td>
+                                                                        <td>
+                                                                            <strong>SEK</strong> <br>
+                                                                            USD
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+
+                                                            </div>
+
+                                                        </div>
+                                                        <!-- /.toggler-content -->
+
+                                                    </div>
+                                                    <!-- /.toggler -->
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                            
+                            </div>
+
+                        </div>
+                        <div class="col-xs-12 col-md-4 worker-col worker-col-02">
+                            
+                            <div class="box box--bg">
+
+                                <ul class="box-headings">
+
+                                    <li class="box-heading active">
+                                        <div class="box-icon box-icon--close js-box-close" data-checkbox="compare-02">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.75 27.75"><title>icon-close</title><path d="M.54,3.44l3-3L13.9,10.79,24.69,0l3.06,3.06L17,13.85,27.48,24.37l-3,3L14,16.85,3.06,27.75,0,24.69l10.9-10.9Z" fill="#bdccd4"/></svg>
+                                        </div>
+                                        <h2 class="box-title">Samruddhi Vairat</h2>
+                                    </li>
+
+                                </ul>
+                                <!-- /.box-headings -->
+
+                                <div class="box-content box-content--tall">
+
+                                    <div class="box-tab active">
+
+                                        <div class="box-inner">
+
+                                            <div class="box-nav">
+
+                                                <h2 class="box-nav-title">Adjustment for:</h2>
+
+                                                <div class="box-nav-icons">
+
+                                                    <div class="box-nav-icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.59 50"><title>icon-adjustment-01</title><path d="M38.59,50H0V0H28.27L38.59,10.32ZM1.82,48.18H36.77V11.08L27.52,1.82H1.82Z" fill="#a2bed8"/><polygon points="27.21 11.38 37.55 11.38 27.21 1.04 27.21 11.38" fill="#a2bed8"/><line x1="9.44" y1="10.76" x2="19.7" y2="10.76" fill="#a2bed8"/><rect x="9.44" y="9.85" width="10.26" height="1.82" fill="#a2bed8"/><line x1="9.44" y1="25" x2="28.4" y2="25" fill="#a2bed8"/><rect x="9.44" y="24.09" width="18.97" height="1.82" fill="#a2bed8"/><line x1="9.44" y1="19.54" x2="28.4" y2="19.54" fill="#a2bed8"/><rect x="9.44" y="18.62" width="18.97" height="1.82" fill="#a2bed8"/><line x1="9.44" y1="30.46" x2="28.4" y2="30.46" fill="#a2bed8"/><rect x="9.44" y="29.55" width="18.97" height="1.82" fill="#a2bed8"/><line x1="9.44" y1="36.84" x2="28.4" y2="36.84" fill="#a2bed8"/><rect x="9.44" y="35.93" width="18.97" height="1.82" fill="#a2bed8"/></svg>
+                                                    </div>
+                                                    <div class="box-nav-icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62.56 50"><title>icon-adjustment-02</title><path d="M58,50H4.53V47.91A2.44,2.44,0,0,0,7,45.47V10.7H62.56V45.47A4.54,4.54,0,0,1,58,50ZM8.36,47.91H58a2.44,2.44,0,0,0,2.44-2.44V12.79H9.07V45.47A4.5,4.5,0,0,1,8.36,47.91Z" fill="#a2bed8"/><path d="M4.53,50A4.54,4.54,0,0,1,0,45.47V0H22.41l4.65,4.65h35.5V8.72H60.47v-2H26.19L21.54,2.09H2.09V45.47a2.44,2.44,0,0,0,2.44,2.44Z" fill="#a2bed8"/><rect x="11.51" y="43.26" width="46.51" height="2.09" fill="#a2bed8"/><polygon points="34.77 41.49 22.94 29.66 29.49 29.66 29.49 19.29 31.59 19.29 31.59 31.75 27.99 31.75 34.77 38.53 41.54 31.75 37.95 31.75 37.95 19.29 40.04 19.29 40.04 29.66 46.6 29.66 34.77 41.49" fill="#a2bed8"/><rect x="6.86" y="4.65" width="2.33" height="2.09" fill="#a2bed8"/><rect x="11.51" y="4.65" width="2.33" height="2.09" fill="#a2bed8"/><rect x="16.16" y="4.65" width="2.33" height="2.09" fill="#a2bed8"/></svg>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                            <!-- /.box-nav -->
+
+                                            <div class="compare-single-wrapper">
+
+                                                <div class="js-scrollbar js-scrollbar--tall">
+
+                                                    <div class="person person--inline">
+
+                                                        <div class="person-photo">
+                                                            <img src="img/global/sample-avatar.jpg" alt="Samruddhi Vairat" title="Samruddhi Vairat">
+                                                        </div>
+                                                        <!-- /.person-photo -->
+
+                                                        <div class="person-data">
+                                                            <h3 class="person-name">Samruddhi Vairat</h3>
+                                                            <div class="person-position">Director</div>
+                                                            <span class="person-pin">000661</span>
+                                                        </div>
+                                                        <!-- /.person-data -->
+
+                                                    </div>
+                                                    <!-- /.person person-inline -->
+
+                                                    <div class="toggler">
+
+                                                        <div class="toggler-bar js-toggler-bar">
+                                                            <h2 class="toggler-title">Current job</h2>
+                                                            <span class="box-filter-arrow"></span>
+                                                        </div>
+                                                        <!-- /.toggler-bar -->
+
+                                                        <div class="toggler-content">
+
+                                                            <div class="toggler-content-inner">
+
+                                                                <table class="table">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td><span class="table-label">Position:</span></td>
+                                                                            <td>Director, Global Support - EMEA</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><span class="table-label">Manager:</span></td>
+                                                                            <td>Susan Stainberg</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><span class="table-label">Organisation:</span>:</td>
+                                                                            <td>Global Support Center</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><span class="table-label">Grade:</span></td>
+                                                                            <td>Management</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td><span class="table-label">Grade profile:</span></td>
+                                                                            <td>Sweden</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+
+                                                            </div>
+
+                                                        </div>
+                                                        <!-- /.toggler-content -->
+
+                                                    </div>
+                                                    <!-- /.toggler -->
+
+                                                    <div class="toggler">
+
+                                                        <div class="toggler-bar js-toggler-bar">
+                                                            <h2 class="toggler-title">Performance</h2>
+                                                            <span class="box-filter-arrow"></span>
+                                                        </div>
+                                                        <!-- /.toggler-bar -->
+
+                                                        <div class="toggler-content">
+
+                                                            <div class="toggler-content-inner">
+
+                                                                <table class="table">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td><span class="table-label">Previous review rating::</span></td>
+                                                                            <td>3 - Meets Expectations</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+
+                                                                <a href="#" class="compare-view-history">View history</a>
+
+                                                            </div>
+
+                                                        </div>
+                                                        <!-- /.toggler-content -->
+
+                                                    </div>
+                                                    <!-- /.toggler -->
+
+                                                    <div class="toggler">
+
+                                                        <div class="toggler-bar js-toggler-bar">
+                                                            <h2 class="toggler-title">Compensation</h2>
+                                                            <span class="box-filter-arrow"></span>
+                                                        </div>
+                                                        <!-- /.toggler-bar -->
+
+                                                        <div class="toggler-content">
+
+                                                            <div class="toggler-content-inner">
+
+                                                                <div class="compensation-payrange">
+
+                                                                    <div class="compensation-icon">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90"><title>icon-compensation</title><path d="M49,46.35V44.1a8.4,8.4,0,0,0-2.06-16.54H43.08a3.4,3.4,0,0,1,0-6.8h9.74a2.5,2.5,0,0,0,0-5H49v-2a2.5,2.5,0,1,0-5,0v2h-.89a8.4,8.4,0,0,0,0,16.8h3.84a3.4,3.4,0,0,1,0,6.8H37.18a2.5,2.5,0,0,0,0,5H44v2a2.5,2.5,0,1,0,5,0Z" fill="#f39638"/><path d="M87.5,85h-38c6.66-11,25-42.56,25-55.5a29.5,29.5,0,0,0-59,0c0,12.93,18.38,44.48,25,55.5H2.5a2.5,2.5,0,0,0,0,5h85a2.5,2.5,0,0,0,0-5ZM45,5A24.53,24.53,0,0,1,69.5,29.5c0,10.66-16.1,39.38-24.5,53.23C36.59,68.88,20.49,40.16,20.49,29.5A24.53,24.53,0,0,1,45,5Z" fill="#f39638"/></svg>
+                                                                    </div>
+
+                                                                    <div class="compensation-data">
+                                                                        <div class="compensation-text">Pay range</div>
+                                                                        <div class="compensation-amount">
+                                                                            700, 000 - 975, 000
+                                                                        </div>
+                                                                        <!-- /.pay-amount -->
+                                                                        <div class="compensation-cur">Sek annual</div>
+                                                                    </div>
+                                                                    <!-- /.compensation-data -->
+
+                                                                </div>
+                                                                <!-- /.compensation-payrange -->
+
+                                                                <table class="table-compensation">
+                                                                    <tr>
+                                                                        <th>Compensation basis</th>
+                                                                        <th>Current</th>
+                                                                        <th>New</th>
+                                                                        <th>Currency</th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <strong>On target earnings</strong>
+                                                                        </td>
+                                                                        <td>
+                                                                            <strong>962, 500, 00</strong> <br>
+                                                                            143, 123, 75
+                                                                        </td>
+                                                                        <td>
+                                                                            <strong>875, 500, 00</strong> <br>
+                                                                            130, 112, 75
+                                                                        </td>
+                                                                        <td>
+                                                                            <strong>SEK</strong> <br>
+                                                                            USD
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <strong>Total Base Pay</strong>
+                                                                        </td>
+                                                                        <td>
+                                                                            <strong>922, 120, 00</strong> <br>
+                                                                            343, 123, 75
+                                                                        </td>
+                                                                        <td>
+                                                                            <strong>375, 500, 00</strong> <br>
+                                                                            135, 112, 12
+                                                                        </td>
+                                                                        <td>
+                                                                            <strong>SEK</strong> <br>
+                                                                            USD
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <strong>Total Salary &amp; Allowances</strong>
+                                                                        </td>
+                                                                        <td>
+                                                                            <strong>922, 120, 00</strong> <br>
+                                                                            343, 123, 75
+                                                                        </td>
+                                                                        <td>
+                                                                            <strong>375, 500, 00</strong> <br>
+                                                                            135, 112, 12
+                                                                        </td>
+                                                                        <td>
+                                                                            <strong>SEK</strong> <br>
+                                                                            USD
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+
+                                                            </div>
+
+                                                        </div>
+                                                        <!-- /.toggler-content -->
+
+                                                    </div>
+                                                    <!-- /.toggler -->
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                            
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- /.row -->
+
+                </div>
+
+            </div>
+            <!-- /.app-container -->
+
+        </div>
+        <!-- /.app-wrapper -->
+
+    </main>
+    <!-- /.app -->
+
+    <div class="js-dev-mode dev-mode">Enable dev mode</div>
+    <!-- /.js-dev-mode dev-mode -->
+
+
+
+<script src="js/vendor/jquery-3.2.1.min.js"></script>
+<script src="js/vendor/jquery-scrollbar.min.js"></script>
+<script src="js/vendor/jquery-sortable.min.js"></script>
+<script src="js/vendor/jquery-lists.min.js"></script>
+<script src="js/vendor/jquery-cookies.js"></script>
+<script src="js/vendor/jquery-ui.min.js"></script>
+<script src="js/vendor/jquery-steps.min.js"></script>
+<script src="js/vendor/jquery-visible.min.js"></script>
+<script src="js/core.js"></script>
+
+
+    <script>
+        app.panel();
+    </script>
+
+
+</body>
+
+</html>

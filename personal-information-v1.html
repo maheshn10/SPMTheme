@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <!-- Modernizr -->
+    <script src="js/vendor/modernizr.min.js"></script>
+
+    <!-- Stylesheets -->
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom-scrollbar.css?v=0.2">
+    <link rel="stylesheet" href="css/jquery-ui.structure.css?v=0.2">
+    <link rel="stylesheet" href="css/jquery-steps.css?v=0.2">
+    <link rel="stylesheet" href="css/style.css?v=0.2">
+    
+    <title>SPM &raquo; Personal information v1</title>
+</head>
+   
+
+<body class="page-home page-panel">
+    
+    <!-- Sidebar navigation -->
+    <div class="sidebar">
+
+        <nav class="sidebar-menu">
+    <ul>
+        <li>
+            <a href="panel-index.html" class="transition sidebar-item " title="Home">
+                <div class="sidebar-item-icon sidebar-icon-home"></div> 
+                <span class="sidebar-title">Home</span>
+            </a>
+        </li>
+        <li>
+            <a href="my-team.html" class="transition sidebar-item " title="My team">
+                <div class="sidebar-item-icon sidebar-icon-my-team"></div> 
+                <span class="sidebar-title">My Team</span>
+            </a>
+        </li>
+        <li>
+            <a href="personal-information.html" class="transition sidebar-item " title="Personal information">
+                <div class="sidebar-item-icon sidebar-icon-personal-information"></div> 
+                <span class="sidebar-title">Personal Information</span>
+            </a>
+        </li>
+        <li>
+            <a href="job-information.html" class="transition sidebar-item " title="Workers comparison">
+                <div class="sidebar-item-icon sidebar-icon-job-info"></div> 
+                <span class="sidebar-title">Job Information</span>
+            </a>
+        </li>
+        <li>
+            <a href="compensation.html" class="transition sidebar-item " title="Compensation">
+                <div class="sidebar-item-icon sidebar-icon-compensation"></div> 
+                <span class="sidebar-title">Compensation</span>
+            </a>
+        </li>
+        <li>
+            <a href="benefits.html" class="transition sidebar-item " title="Benefits">
+                <div class="sidebar-item-icon sidebar-icon-benefits"></div> 
+                <span class="sidebar-title">Benefits</span>
+            </a>
+        </li>
+        <li>
+            <a href="time-off.html" class="transition sidebar-item " title="Time ff">
+                <div class="sidebar-item-icon sidebar-icon-time-off"></div> 
+                <span class="sidebar-title">Time Off</span>
+            </a>
+        </li>
+        <li>
+            <a href="org-chart.html" class="transition sidebar-item " title="Org chart">
+                <div class="sidebar-item-icon sidebar-icon-org-chart"></div> 
+                <span class="sidebar-title">Org Chart</span>
+            </a>
+        </li>
+        <li>
+            <a href="workers-comparison.html" class="transition sidebar-item " title="Workers comparison">
+                <div class="sidebar-item-icon sidebar-icon-comparison"></div> 
+                <span class="sidebar-title">Workers Comparison</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="sidebar-item" title="Development">
+                <div class="sidebar-item-icon sidebar-icon-development"></div> 
+                <span class="sidebar-title">Development</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="sidebar-item" title="Expenses">
+                <div class="sidebar-item-icon sidebar-icon-expenses"></div> 
+                <span class="sidebar-title">Expenses</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="sidebar-item" title="Documentation">
+                <div class="sidebar-item-icon sidebar-icon-documentation"></div> 
+                <span class="sidebar-title">Reports</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="sidebar-item" title="Audit">
+                <div class="sidebar-item-icon sidebar-icon-audit"></div> 
+                <span class="sidebar-title">Audit</span>
+            </a>
+        </li>      
+        
+        
+    </ul>
+
+    <div class="sidebar-toggler js-sidebar-toggle">
+        <svg enable-background="new 0 0 32 32" height="32px" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M24.291,14.276L14.705,4.69c-0.878-0.878-2.317-0.878-3.195,0l-0.8,0.8c-0.878,0.877-0.878,2.316,0,3.194  L18.024,16l-7.315,7.315c-0.878,0.878-0.878,2.317,0,3.194l0.8,0.8c0.878,0.879,2.317,0.879,3.195,0l9.586-9.587  c0.472-0.471,0.682-1.103,0.647-1.723C24.973,15.38,24.763,14.748,24.291,14.276z" fill="#175d9d"></path></svg>
+    </div>
+
+</nav>
+<!-- /.sidebar-menu -->        
+    </div>
+    <!-- /.sidebar -->
+
+    <main class="app">
+
+        <div class="app-wrapper">
+
+            <div class="navbar">
+
+    <div class="sidebar-logo-block">
+
+        <a href="panel-index.html" class="sidebar-logo" title="Go to index">
+            <img class="sidebar-logo-image" src="img/sidebar/sidebar-logo.svg" alt="Go to index" title="Go to index"> 
+        </a>
+
+    </div>
+    <!-- /.sidebar-logo-block -->
+            
+    <div class="navbar-toggle-search">
+
+        <form action="#" class="navbar-search">
+            <input type="submit" value="" class="navbar-search-submit">
+            <input type="text" class="navbar-search-input" placeholder="Search">
+        </form>
+        <!-- /.navbar-search -->
+
+    </div>
+
+    <ul class="navbar-actions">
+        <li>
+            <a href="#" class="navbar-action" title="Show my calendar">
+                <div class="navbar-icon navbar-icon-calendar">
+                    <span class="badge badge--nav">5</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="navbar-action" title="Show my messages">
+                <div class="navbar-icon navbar-icon-mail">
+                    <span class="badge badge--nav">15</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="navbar-action" title="Show all notifications">
+                <div class="navbar-icon navbar-icon-notification">
+                    <span class="badge badge--nav">99+</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <div class="navbar-user">
+
+                <img class="navbar-avatar" src="img/navbar/sample-avatar.png" alt="Samruddhi Vairat" title="Samruddhi Vairat">
+                <span class="navbar-name">
+                    Samruddhi <br>
+                    Vairat
+                </span>
+                <div class="navbar-dropdown js-box-dropdown">
+                    <ul class="take-action box-dropdown-content js-box-dropdown-content">
+                        <li><a href="#">User Profile</a></li>
+                        <li><a href="#">Admin Options</a></li>
+                        <li><a href="#">Proxy Options</a></li>
+                        <li><a href="#">Change Language</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </li>
+    </ul>
+    <!-- /.navbar-actions -->
+
+</div>
+<!-- /.navbar -->
+            <div class="app-container">
+
+                <ul class="breadcrumbs">
+                    <li>
+                        <a href="panel-index.html" class="breadcrumbs-item">Home</a>
+                    </li>
+                    <li>
+                        <a href="personal-information.html" class="breadcrumbs-item active">Personal information</a>
+                    </li>
+                </ul>
+                <!-- /.breadcrumbs -->
+
+                <div class="container">
+                    <div class="row row--panel">
+
+                        <!-- Featured values -->
+                        <div class="col-xs-12 col-md-3">
+
+                            <div class="panel key">
+
+                                <div class="key-icon">
+                                    <img src="img/icons/key-money.svg" alt="">
+                                </div>
+                                
+                                <div class="key-data">
+
+                                    <div class="key-title">Salary</div>
+                                    <div class="key-value key-value--salary">15 000</div>
+
+                                </div>
+
+                                <div class="panel-edit">
+
+                                    <div class="panel-edit-icon js-panel-edit"></div>
+
+                                    <ul class="panel panel-edit-list">
+                                        <li class="panel-edit-item js-panel-item active" data-keytitle="Salary" data-keyvalue="10 000">Change to salary</li>
+                                        <li class="panel-edit-item js-panel-item" data-keytitle="Base salary" data-keyvalue="2500">Change to base salary</li>
+                                        <li class="panel-edit-item js-panel-item" data-keytitle="Hourly salary" data-keyvalue="25">Change to hourly salary</li>
+                                        <li class="panel-edit-item js-panel-item" data-keytitle="MRP low" data-keyvalue="1220">Change to MRP low</li>
+                                        <li class="panel-edit-item js-panel-item" data-keytitle="MRP" data-keyvalue="1900">Change to MRP</li>
+                                        <li class="panel-edit-item js-panel-item" data-keytitle="MRP high" data-keyvalue="2250">Change to MRP high</li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        
+                        <div class="col-xs-12 col-md-3">
+
+                            <div class="panel key">
+
+                                <div class="key-icon">
+                                    <img src="img/icons/key-goal.svg" alt="">
+                                </div>
+                                
+                                <div class="key-data">
+
+                                    <div class="key-title">Target total</div>
+                                    <div class="key-value key-value--bonus">10 000</div>
+
+                                </div>
+
+                                <div class="panel-edit">
+
+                                    <div class="panel-edit-icon js-panel-edit"></div>
+
+                                    <ul class="panel panel-edit-list">
+                                        <li class="panel-edit-item js-panel-item active" data-keytitle="Salary" data-keyvalue="10 000">Change to salary</li>
+                                        <li class="panel-edit-item js-panel-item" data-keytitle="Base salary" data-keyvalue="2500">Change to base salary</li>
+                                        <li class="panel-edit-item js-panel-item" data-keytitle="Hourly salary" data-keyvalue="25">Change to hourly salary</li>
+                                        <li class="panel-edit-item js-panel-item" data-keytitle="MRP low" data-keyvalue="1220">Change to MRP low</li>
+                                        <li class="panel-edit-item js-panel-item" data-keytitle="MRP" data-keyvalue="1900">Change to MRP</li>
+                                        <li class="panel-edit-item js-panel-item" data-keytitle="MRP high" data-keyvalue="2250">Change to MRP high</li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-md-3">
+
+                            <div class="panel key">
+
+                                <div class="key-icon">
+                                    <img src="img/icons/key-docs.svg" alt="">
+                                </div>
+                                
+                                <div class="key-data">
+
+                                    <div class="key-title">Planwork time</div>
+                                    <div class="key-value key-value--docs">12</div>
+
+                                </div>
+
+                                <div class="panel-edit">
+
+                                    <div class="panel-edit-icon js-panel-edit"></div>
+
+                                    <ul class="panel panel-edit-list">
+                                        <li class="panel-edit-item js-panel-item active" data-keytitle="Salary" data-keyvalue="10 000">Change to salary</li>
+                                        <li class="panel-edit-item js-panel-item" data-keytitle="Base salary" data-keyvalue="2500">Change to base salary</li>
+                                        <li class="panel-edit-item js-panel-item" data-keytitle="Hourly salary" data-keyvalue="25">Change to hourly salary</li>
+                                        <li class="panel-edit-item js-panel-item" data-keytitle="MRP low" data-keyvalue="1220">Change to MRP low</li>
+                                        <li class="panel-edit-item js-panel-item" data-keytitle="MRP" data-keyvalue="1900">Change to MRP</li>
+                                        <li class="panel-edit-item js-panel-item" data-keytitle="MRP high" data-keyvalue="2250">Change to MRP high</li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-xs-12 col-md-3">
+
+                            <div class="panel key">
+
+                                <div class="key-icon">
+                                    <img src="img/icons/key-docs.svg" alt="">
+                                </div>
+                                
+                                <div class="key-data">
+
+                                    <div class="key-title">Company ratio</div>
+                                    <div class="key-value key-value--docs">10</div>
+
+                                </div>
+
+                                <div class="panel-edit">
+
+                                    <div class="panel-edit-icon js-panel-edit"></div>
+
+                                    <ul class="panel panel-edit-list">
+                                        <li class="panel-edit-item js-panel-item active" data-keytitle="Salary" data-keyvalue="10 000">Change to salary</li>
+                                        <li class="panel-edit-item js-panel-item" data-keytitle="Base salary" data-keyvalue="2500">Change to base salary</li>
+                                        <li class="panel-edit-item js-panel-item" data-keytitle="Hourly salary" data-keyvalue="25">Change to hourly salary</li>
+                                        <li class="panel-edit-item js-panel-item" data-keytitle="MRP low" data-keyvalue="1220">Change to MRP low</li>
+                                        <li class="panel-edit-item js-panel-item" data-keytitle="MRP" data-keyvalue="1900">Change to MRP</li>
+                                        <li class="panel-edit-item js-panel-item" data-keytitle="MRP high" data-keyvalue="2250">Change to MRP high</li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!--/.row-->
+                    
+                    <div class="row row--panel">
+                        <div class="col-xs-12 col-md-2">
+
+                            <div class="box">
+
+                                <ul class="box-headings">
+
+                                    <li class="box-heading active">
+                                        <h2 class="box-title">Personal information</h2>
+                                        <div class="box-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><title>icon-basic-information</title><path d="M46,14.37H32.72V12a1.39,1.39,0,0,0-1.39-1.39H29.17V1.39A1.39,1.39,0,0,0,27.78,0H22.22a1.39,1.39,0,0,0-1.39,1.39V10.6H18.67A1.39,1.39,0,0,0,17.28,12v2.38H4a4,4,0,0,0-4,4V46a4,4,0,0,0,4,4H46a4,4,0,0,0,4-4V18.38A4,4,0,0,0,46,14.37ZM23.61,2.78h2.78V10.6H23.61Zm6.33,10.6v3.78H20.06V13.38ZM47.22,46A1.24,1.24,0,0,1,46,47.22H4A1.24,1.24,0,0,1,2.78,46V18.38A1.24,1.24,0,0,1,4,17.15H17.28v1.4a1.39,1.39,0,0,0,1.39,1.39H31.33a1.39,1.39,0,0,0,1.39-1.39v-1.4H46a1.24,1.24,0,0,1,1.24,1.24Z" fill="#a2bed8"/><path d="M7.78,38H18.56a1.39,1.39,0,0,0,1.39-1.39V25a1.39,1.39,0,0,0-1.39-1.39H7.78A1.39,1.39,0,0,0,6.4,25V36.59A1.39,1.39,0,0,0,7.78,38ZM9.17,26.39h8V35.2h-8Z" fill="#a2bed8"/><path d="M42.22,23.61H25.72a1.39,1.39,0,0,0,0,2.78h16.5a1.39,1.39,0,0,0,0-2.78Z" fill="#a2bed8"/><path d="M42.22,32H25.72a1.39,1.39,0,0,0,0,2.78h16.5a1.39,1.39,0,0,0,0-2.78Z" fill="#a2bed8"/><path d="M42.22,40.41H7.78a1.39,1.39,0,0,0,0,2.78H42.22a1.39,1.39,0,0,0,0-2.78Z" fill="#a2bed8"/></svg>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                                <!-- /.box-headings -->
+
+                                <div class="box-content">
+
+                                    <div class="box-tab active">
+                                        
+                                        <div class="person">
+
+                                            <div class="person-photo">
+                                                <img src="img/global/sample-avatar.jpg" alt="Samruddhi Vairat" title="Samruddhi Vairat">
+                                            </div>
+                                            <!-- /.person-photo -->
+
+                                            <div class="person-data">
+                                                <h3 class="person-name">Samruddhi Vairat</h3>
+                                                <div class="person-position">Lorem ipsum dolor</div>
+                                            </div>
+                                            <!-- /.person-data -->
+
+                                        </div>
+
+                                        <div class="box-inner">
+
+                                            <table class="table table--basic">
+                                                <tr>
+                                                    <td><span class="table-label">Age:</span></td>
+                                                    <td>27</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="table-label">Birth Date:</span></td>
+                                                    <td>09-12-1990</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="table-label">Gender:</span></td>
+                                                    <td>Female</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="table-label">Address:</span></td>
+                                                    <td>Mugav</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="table-label">City:</span></td>
+                                                    <td>Satara</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="table-label">Region:</span></td>
+                                                    <td>A</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="table-label">Pincode:</span></td>
+                                                    <td>123456</td>
+                                                </tr>
+                                            </table>
+                                            <!-- /.table-basic -->
+
+                                        </div>
+                                        <!-- /.box-inner -->
+
+                                    </div>
+                                    <!-- /.box-tab -->
+
+                                </div>
+                                <!-- /.box-content -->
+
+                            </div>
+                            <!-- /.box -->                            
+
+                        </div>
+                        <div class="col-xs-12 col-md-5">
+
+                            <div class="box">
+
+                                <ul class="box-headings js-tabs">
+
+                                    <li class="box-heading active">
+                                        <h2 class="box-title">Basic information</h2>
+                                        <div class="box-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><title>icon-basic-information</title><polygon points="0 12.5 5 12.5 5 5 12.5 5 12.5 0 0 0 0 12.5" fill="#a2bed8"/><polygon points="5 37.5 0 37.5 0 50 12.5 50 12.5 45 5 45 5 37.5" fill="#a2bed8"/><polygon points="45 45 37.5 45 37.5 50 50 50 50 37.5 45 37.5 45 45" fill="#a2bed8"/><polygon points="37.5 0 37.5 5 45 5 45 12.5 50 12.5 50 0 37.5 0" fill="#a2bed8"/><rect y="17.5" width="5" height="15" fill="#a2bed8"/><rect x="17.5" y="45" width="15" height="5" fill="#a2bed8"/><rect x="45" y="17.5" width="5" height="15" fill="#a2bed8"/><rect x="17.5" width="15" height="5" fill="#a2bed8"/><rect x="22.5" y="10" width="5" height="20" fill="#a2bed8"/><rect x="22.5" y="35" width="5" height="5" fill="#a2bed8"/></svg>
+                                        </div>
+                                    </li>
+
+                                    <li class="box-heading">
+                                        <h2 class="box-title">Manager relations</h2>
+                                        <div class="box-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><title>icon-manager-relations</title><path d="M25,15.9a5.33,5.33,0,1,0-5.33-5.33A5.33,5.33,0,0,0,25,15.9ZM25,8a2.55,2.55,0,1,1-2.55,2.55A2.55,2.55,0,0,1,25,8Z" fill="#a2bed8"/><path d="M48.61,39.26H46V35.14a1.39,1.39,0,0,0-1.39-1.39H26.39v-3a15.45,15.45,0,1,0-12-4.13l.06.06a15.38,15.38,0,0,0,9.11,4.07v3H5.37A1.39,1.39,0,0,0,4,35.14v4.12H1.39A1.39,1.39,0,0,0,0,40.65v8A1.39,1.39,0,0,0,1.39,50h8a1.39,1.39,0,0,0,1.39-1.39v-8a1.39,1.39,0,0,0-1.39-1.39H6.76V36.53H23.61v2.73H21a1.39,1.39,0,0,0-1.39,1.39v8A1.39,1.39,0,0,0,21,50h8a1.39,1.39,0,0,0,1.39-1.39v-8A1.39,1.39,0,0,0,29,39.26H26.39V36.53H43.24v2.73H40.65a1.39,1.39,0,0,0-1.39,1.39v8A1.39,1.39,0,0,0,40.65,50h8A1.39,1.39,0,0,0,50,48.61v-8A1.39,1.39,0,0,0,48.61,39.26ZM16.88,25.13a4.5,4.5,0,0,1,3.34-3.86,19.75,19.75,0,0,1,9.55,0,4.5,4.5,0,0,1,3.34,3.86,12.61,12.61,0,0,1-16.24,0ZM25,2.78A12.64,12.64,0,0,1,35.33,22.72a7.26,7.26,0,0,0-4.88-4.15,22.57,22.57,0,0,0-10.91,0,7.24,7.24,0,0,0-4.87,4.15A12.64,12.64,0,0,1,25,2.78ZM8,47.22H2.78V42H8Zm19.63,0H22.41V42h5.18Zm19.63,0H42V42h5.18Z" fill="#a2bed8"/></svg>
+                                        </div>
+                                    </li>
+
+                                    <li class="box-heading">
+                                        <h2 class="box-title">Emergency contacts</h2>
+                                        <div class="box-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45.11 50"><title>icon-emergency-contacts</title><path d="M17.54,4.89h-5C5.05,4.89,0,16.55,0,27.44S5.05,50,12.58,50h5a5,5,0,0,0,5-5V37.47a5,5,0,0,0-5-5H16.16a13.11,13.11,0,0,1-1.12-5,13.11,13.11,0,0,1,1.12-5h1.38a5,5,0,0,0,5-5V9.9A5,5,0,0,0,17.54,4.89Zm0,12.53H15.41c-4.43,0-5.38,8-5.38,10s1,10,5.38,10h2.14V45h-5C9.24,45,5,36.73,5,27.44S9.24,9.9,12.58,9.9h5Z" fill="#a2bed8"/><path d="M40,0,36.43,3.54a12.55,12.55,0,0,1,0,17.72L40,24.81A17.56,17.56,0,0,0,40,0Z" fill="#a2bed8"/><path d="M29.34,10.63a2.51,2.51,0,0,1,0,3.54l3.55,3.54a7.53,7.53,0,0,0,0-10.63Z" fill="#a2bed8"/></svg>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                                <!-- /.box-headings -->
+
+                                <div class="box-content">
+
+                                    <div class="box-tab active">
+                                        
+                                        <div class="box-inner">
+
+                                            <div class="js-scrollbar">
+
+                                                <table class="table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><span class="table-label">Emp Group:</span></td>
+                                                            <td>Group</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Emp SubGroup:</span></td>
+                                                            <td>Subgroup</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Shift</span>:</td>
+                                                            <td>Second </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Geo PersonelSubArea:</span></td>
+                                                            <td>Subarea</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Geo PersonelArea:</span></td>
+                                                            <td>Area</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                
+                                            </div>
+
+                                        </div>
+                                        <!-- /.box-inner -->
+
+                                    </div>
+                                    <!-- /.box-tab -->
+
+                                    <div class="box-tab">
+                                        
+                                        <div class="box-inner">
+
+                                            <div class="js-scrollbar">
+
+                                                <table class="table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><span class="table-label">Company Manager:</span></td>
+                                                            <td>manager</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Cmp Mgr Of Cmp Mgr:</span></td>
+                                                            <td>comManager</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Mgr Operational:</span></td>
+                                                            <td>manager</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Op Mgr Of Op Mgr:</span></td>
+                                                            <td>opManager</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Mgr Functional:</span></td>
+                                                            <td>FunManager</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Mgr Hr:</span></td>
+                                                            <td>hrManager</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
+                                            </div>
+
+                                        </div>
+                                        <!-- /.box-inner -->
+
+                                    </div>
+                                    <!-- /.box-tab -->
+
+                                    <div class="box-tab">
+
+                                        <div class="box-inner">
+
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td><span class="table-label">EName:</span></td>
+                                                        <td>Samruddhi Vairat.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="table-label">Contact Person Name:</span></td>
+                                                        <td>madhu</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="table-label">Person Address:</span></td>
+                                                        <td>satara</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="table-label">Country:</span></td>
+                                                        <td>India</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="table-label">City:</span></td>
+                                                        <td>pune</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="table-label">Mobile:</span></td>
+                                                        <td>1234567890</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+                                        <!-- /.box-inner -->
+
+                                    </div>
+                                    <!-- /.box-tab -->
+
+                                </div>
+                                <!-- /.box-content -->
+                                
+                            </div>
+                            <!-- /.box -->
+
+                        </div>
+                        <div class="col-xs-12 col-md-5">
+
+                            <div class="box">
+
+                                <ul class="box-headings js-tabs">
+
+                                    <li class="box-heading active">
+                                        <h2 class="box-title">Performance ratings</h2>
+                                        <div class="box-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.5 50"><title>icon-performance-ratings</title><rect y="22.5" width="5" height="27.5" fill="#a2bed8"/><rect x="12.5" y="10" width="5" height="40" fill="#a2bed8"/><rect x="25" y="30" width="5" height="20" fill="#a2bed8"/><rect x="37.5" width="5" height="50" fill="#a2bed8"/></svg>
+                                        </div>
+                                    </li>
+
+                                    <li class="box-heading">
+                                        <h2 class="box-title">Operational hierarchy</h2>
+                                        <div class="box-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.07 50"><title>icon-operational-hierarchy</title><polygon points="12.54 40.86 12.54 20.01 7.56 20.01 7.56 40.87 3.4 37 0 40.65 10.04 50 20.1 40.65 16.7 37 12.54 40.86" fill="#a2bed8"/><polygon points="35.07 9.35 25.03 0 14.97 9.35 18.37 13 22.52 9.14 22.52 29.99 27.51 29.99 27.51 9.13 31.67 13 35.07 9.35" fill="#a2bed8"/></svg>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                                <!-- /.box-headings -->
+
+                                <div class="box-content">
+
+                                    <div class="box-tab active">
+                                        
+                                        <div class="box-inner">
+
+                                            <div class="js-scrollbar">
+
+                                                <table class="table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><span class="table-label">Time in Current Position:</span></td>
+                                                            <td>position1</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Current Position Range:</span></td>
+                                                            <td>range1</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Last Perfome Rating:</span></td>
+                                                            <td>last1</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Performance Rating(Year 1):</span></td>
+                                                            <td>year11</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Performance Rating(Year 2):</span></td>
+                                                            <td>year21</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Performance Rating(Year 3):</span></td>
+                                                            <td>year31</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Last Potential Rating:</span></td>
+                                                            <td>last1</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Potential Rating(Year 1):</span></td>
+                                                            <td>year111</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Potential Rating(Year 2):</span></td>
+                                                            <td>year211</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Potential Rating(Year 3):</span></td>
+                                                            <td>year311</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Last Learning Agility Rating:</span></td>
+                                                            <td>last1</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Learning Agility Rating(Year 1):</span></td>
+                                                            <td>year112</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Learning Agility Rating(Year 2):</span></td>
+                                                            <td>year212</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Learning Agility Rating(Year 3):</span></td>
+                                                            <td>year312</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                
+                                            </div>
+
+                                        </div>
+                                        <!-- /.box-inner -->
+
+                                    </div>
+                                    <!-- /.box-tab -->
+
+                                    <div class="box-tab">
+                                        
+                                        <div class="box-inner">
+
+                                            <div class="js-scrollbar">
+
+                                                <table class="table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><span class="table-label">Org Unit:</span></td>
+                                                            <td>unit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Org Op Level3:</span></td>
+                                                            <td>level3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Org Op Level2:</span></td>
+                                                            <td>level2</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Org Op Level1:</span></td>
+                                                            <td>level1</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
+                                            </div>
+
+                                        </div>
+                                        <!-- /.box-inner -->
+
+                                    </div>
+                                    <!-- /.box-tab -->
+
+                                </div>
+                                <!-- /.box-content -->
+                                
+                            </div>
+                            <!-- /.box -->
+
+                        </div>
+                    </div>
+
+                    <div class="row row--panel">
+                      
+                        <div class="col-xs-12 col-md-7">
+
+                            <div class="box">
+
+                                <ul class="box-headings js-tabs">
+
+                                    <li class="box-heading active">
+                                        <h2 class="box-title">Salary</h2>
+                                        <div class="box-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><title>icon-salary</title><path d="M27.21,25.75V24.5a4.66,4.66,0,0,0-1.14-9.19H23.93a1.89,1.89,0,0,1,0-3.78h5.41a1.39,1.39,0,0,0,0-2.78H27.21V7.66a1.39,1.39,0,1,0-2.78,0v1.1h-.5a4.67,4.67,0,0,0,0,9.33h2.13a1.89,1.89,0,0,1,0,3.78H20.66a1.39,1.39,0,0,0,0,2.78h3.77v1.11a1.39,1.39,0,1,0,2.78,0Z" fill="#bdccd4"/><path d="M48.61,47.22H27.48c3.7-6.12,13.91-23.65,13.91-30.83a16.39,16.39,0,0,0-32.78,0c0,7.18,10.21,24.71,13.91,30.83H1.39a1.39,1.39,0,0,0,0,2.78H48.61a1.39,1.39,0,0,0,0-2.78ZM25,2.78A13.63,13.63,0,0,1,38.61,16.39C38.61,22.31,29.67,38.27,25,46c-4.67-7.69-13.61-23.65-13.61-29.57A13.63,13.63,0,0,1,25,2.78Z" fill="#bdccd4"/></svg>
+                                        </div>
+                                    </li>
+
+                                    <li class="box-heading">
+                                        <h2 class="box-title">Bonus</h2>
+                                        <div class="box-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40.27 50"><title>icon-bonus</title><path d="M20,10.5a7,7,0,1,0,7,7A7,7,0,0,0,20,10.5Zm0,10a3,3,0,1,1,3-3A3,3,0,0,1,20,20.5Z" fill="#a2bed8" stroke="#f4f7fa" stroke-miterlimit="10"/><path d="M39.55,42,32.75,28.72l.21-.25a17,17,0,1,0-25.77.18l.22.25L.72,42.05a2,2,0,0,0,2.4,2.81l4.83-1.57,1.57,4.82a2,2,0,0,0,1.75,1.38,2.07,2.07,0,0,0,1.94-1.09l6.94-13.61,6.94,13.61A2,2,0,0,0,29,49.49a2,2,0,0,0,1.74-1.38l1.57-4.82,4.82,1.57A2,2,0,0,0,39.55,42Zm-27.72.24-.69-2.13a2,2,0,0,0-1-1.17,2,2,0,0,0-1.53-.12l-2.13.69,4.06-8,.46.29a16.91,16.91,0,0,0,4.45,2L16,34ZM20,30.5a13,13,0,1,1,13-13A13,13,0,0,1,20,30.5Zm11.66,8.37a2,2,0,0,0-1.53.12,2,2,0,0,0-1,1.16l-.69,2.13L24.21,34l.58-.17a17,17,0,0,0,4.42-2l.47-.3,4.12,8.09Z" fill="#a2bed8" stroke="#f4f7fa" stroke-miterlimit="10"/></svg>
+                                        </div>
+                                    </li>
+
+                                    <li class="box-heading">
+                                        <h2 class="box-title">Payroll structure</h2>
+                                        <div class="box-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36.94 50"><title>icon-payroll-structure</title><path d="M32.93,0H4A4,4,0,0,0,0,4V39.57a4,4,0,0,0,1.18,2.84l6.42,6.42A4,4,0,0,0,10.43,50h22.5a4,4,0,0,0,4-4V4A4,4,0,0,0,32.93,0ZM4.74,42H8v3.21ZM34.16,46a1.24,1.24,0,0,1-1.23,1.23H10.73V40.66a1.39,1.39,0,0,0-1.39-1.39H2.78V4A1.24,1.24,0,0,1,4,2.78H32.93A1.24,1.24,0,0,1,34.16,4Z" fill="#a2bed8"/><path d="M29.89,7.32H19a1.39,1.39,0,0,0,0,2.78h10.9a1.39,1.39,0,0,0,0-2.78Z" fill="#a2bed8"/><path d="M29.89,15.71H7a1.39,1.39,0,0,0,0,2.78H29.89a1.39,1.39,0,0,0,0-2.78Z" fill="#a2bed8"/><path d="M29.89,24.1H19a1.39,1.39,0,0,0,0,2.78h10.9a1.39,1.39,0,0,0,0-2.78Z" fill="#a2bed8"/><path d="M29.89,32.49H7a1.39,1.39,0,0,0,0,2.78H29.89a1.39,1.39,0,0,0,0-2.78Z" fill="#a2bed8"/><path d="M29.89,40.89H15.42a1.39,1.39,0,0,0,0,2.78H29.89a1.39,1.39,0,0,0,0-2.78Z" fill="#a2bed8"/><path d="M9.28,12.6a1.39,1.39,0,0,0,2,0l5.82-5.82a1.39,1.39,0,1,0-2-2L10.26,9.65,8,7.42a1.39,1.39,0,0,0-2,2Z" fill="#a2bed8"/><path d="M9.28,28.52a1.39,1.39,0,0,0,2,0l5.82-5.82a1.39,1.39,0,1,0-2-2l-4.84,4.84L8,23.34a1.39,1.39,0,0,0-2,2Z" fill="#a2bed8"/></svg>
+                                        </div>
+                                    </li>
+
+                                    <li class="box-heading">
+                                        <h2 class="box-title">Compensation history</h2>
+                                        <div class="box-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45.99 51"><title>icon-compensation-history</title><path d="M10.5.5v10H.5v26l14,14h21v-10h10V.5ZM13,42,9,38h4ZM30.5,45.5H18V33H5.5V15.5h25Zm10-10h-5v-25h-20v-5h25Z" fill="#a2bed8" stroke="#f4f7fa" stroke-miterlimit="10"/><rect x="10.5" y="20.5" width="15" height="5" fill="#a2bed8" stroke="#f4f7fa" stroke-miterlimit="10"/></svg>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                                <!-- /.box-headings -->
+
+                                <div class="box-content">
+
+                                    <div class="box-tab active">
+                                        
+                                        <div class="box-inner">
+
+                                            <div class="js-scrollbar">
+
+                                                <table class="table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><span class="table-label">Currency:</span></td>
+                                                            <td>Rupees</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Base Salary:</span></td>
+                                                            <td>10000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Hourly Salary:</span></td>
+                                                            <td>100</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Monthly Salary:</span></td>
+                                                            <td>15000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Ann Fte Salary:</span></td>
+                                                            <td>100</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">MRR Low:</span></td>
+                                                            <td>450</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">MRP:</span></td>
+                                                            <td>500</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">MRRHigh:</span></td>
+                                                            <td>450</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">EEo ExemptInd:</span></td>
+                                                            <td>50</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                
+                                            </div>
+
+                                        </div>
+                                        <!-- /.box-inner -->
+
+                                    </div>
+                                    <!-- /.box-tab -->
+
+                                    <div class="box-tab">
+                                        
+                                        <div class="box-inner">
+
+                                            <div class="js-scrollbar">
+
+                                                <table class="table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><span class="table-label">Aip Target Amount:</span></td>
+                                                            <td>1500</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Aip Target Percentage:</span></td>
+                                                            <td>50</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Sales Inc Target Amount:</span></td>
+                                                            <td>20</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Sales Inc Target Per:</span></td>
+                                                            <td>30</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">In Work Time:</span></td>
+                                                            <td>12</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Target Total Cash Sales:</span></td>
+                                                            <td>56</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Target Total Cash Emp:</span></td>
+                                                            <td>34</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Fte Target Total Cash Sales:</span></td>
+                                                            <td>23</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Fte Target Total Cach Emp:</span></td>
+                                                            <td>30</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
+                                            </div>
+
+                                        </div>
+                                        <!-- /.box-inner -->
+
+                                    </div>
+                                    <!-- /.box-tab -->
+
+                                    <div class="box-tab">
+
+                                        <div class="box-inner">
+
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td><span class="table-label">Org Division Level:</span></td>
+                                                        <td>level</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="table-label">Org Company Code:</span></td>
+                                                        <td>code</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="table-label">Org CostCenter:</span></td>
+                                                        <td>center</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="table-label">Work Tax Area:</span></td>
+                                                        <td>1.8</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+                                        <!-- /.box-inner -->
+
+                                    </div>
+                                    <!-- /.box-tab -->
+
+                                    <div class="box-tab">
+
+                                        <div class="box-inner">
+
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td><span class="table-label">EffectiveDate:</span></td>
+                                                        <td>11-08-2015</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="table-label">ActionDate:</span></td>
+                                                        <td>12-08-2015</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="table-label">ActionType:</span></td>
+                                                        <td>type1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="table-label">ActionoReason:</span></td>
+                                                        <td>reason1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="table-label">ReasonForCompChange:</span></td>
+                                                        <td>change1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="table-label">OrgPositionTitle:</span></td>
+                                                        <td>title1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="table-label">MgrCompFullName:</span></td>
+                                                        <td>name1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="table-label">PlanworkTime:</span></td>
+                                                        <td>12</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="table-label">AnnBaseSalaryFrom:</span></td>
+                                                        <td>15000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="table-label">AnnBaseSalaryTo:</span></td>
+                                                        <td>20000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="table-label">SalaryChangeAmt:</span></td>
+                                                        <td>5000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="table-label">SalaryChangePer:</span></td>
+                                                        <td>20</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="table-label">CompanyRatio:</span></td>
+                                                        <td>10</td>
+                                                    </tr>
+                                                    <tr>    
+                                                        <td><span class="table-label">MRRLow:</span></td>
+                                                        <td>123</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+                                        <!-- /.box-inner -->
+
+                                    </div>
+                                    <!-- /.box-tab -->
+
+                                </div>
+                                <!-- /.box-content -->
+                                
+                            </div>
+                            <!-- /.box -->
+
+                        </div>
+                        <div class="col-xs-12 col-md-5">
+
+                            <div class="box">
+
+                                <ul class="box-headings js-tabs">
+
+                                    <li class="box-heading active">
+                                        <h2 class="box-title">Associate dates</h2>
+                                        <div class="box-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><title>icon-associate-dates</title><path d="M0,0V50H50V0ZM45,5V15H5V5ZM5,45V20H45V45Z" fill="#a2bed8"/><rect x="22.5" y="25" width="5" height="5" fill="#a2bed8"/><rect x="32.5" y="25" width="5" height="5" fill="#a2bed8"/><rect x="12.5" y="35" width="5" height="5" fill="#a2bed8"/><rect x="22.5" y="35" width="5" height="5" fill="#a2bed8"/><circle cx="15" cy="10" r="2.5" fill="#a2bed8"/><circle cx="35" cy="10" r="2.5" fill="#a2bed8"/></svg>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                                <!-- /.box-headings -->
+
+                                <div class="box-content">
+
+                                    <div class="box-tab active">
+                                        
+                                        <div class="box-inner">
+
+                                            <div class="js-scrollbar">
+
+                                                <table class="table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><span class="table-label">Original Hire Date:</span></td>
+                                                            <td>05-08-2015</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Adjust Service Date:</span></td>
+                                                            <td>10-08-2015</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Rehire Date:</span></td>
+                                                            <td>19-08-2015</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Technical Entry Date:</span></td>
+                                                            <td>20-08-2015</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Service Date:</span></td>
+                                                            <td>30-08-2015</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">End Temprary Contract:</span></td>
+                                                            <td>16-06-2015</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Job Entry:</span></td>
+                                                            <td>13-05-2015</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Assign Date:</span></td>
+                                                            <td>11-08-2015</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Work Permit:</span></td>
+                                                            <td>12-03-2015</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Vac Elig Ovrrd:</span></td>
+                                                            <td>07-07-2015</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Stock Service:</span></td>
+                                                            <td>05-08-2015</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Acquisition:</span></td>
+                                                            <td>05-08-2015</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Service Length:</span></td>
+                                                            <td>01-06-2015</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Expiry Of Probation:</span></td>
+                                                            <td>09-08-2015</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">End Of LeaveAbsence:</span></td>
+                                                            <td>25-08-2015</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Grandfather GJFA:</span></td>
+                                                            <td>23-12-2015</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Grandfather AI:</span></td>
+                                                            <td>10-08-2015</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Termination Date:</span></td>
+                                                            <td>16-06-2015</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Last Phy Work:</span></td>
+                                                            <td>28-07-2015</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Benefits End:</span></td>
+                                                            <td>10-08-2015</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><span class="table-label">Date Of Death:</span></td>
+                                                            <td>17-08-2015</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                
+                                            </div>
+
+                                        </div>
+                                        <!-- /.box-inner -->
+
+                                    </div>
+                                    <!-- /.box-tab -->
+
+                                </div>
+                                <!-- /.box-content -->
+                                
+                            </div>
+                            <!-- /.box -->
+
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- /.app-container -->
+
+        </div>
+        <!-- /.app-wrapper -->
+
+    </main>
+    <!-- /.app -->
+
+    <div class="js-dev-mode dev-mode">Enable dev mode</div>
+    <!-- /.js-dev-mode dev-mode -->
+
+
+
+<script src="js/vendor/jquery-3.2.1.min.js"></script>
+<script src="js/vendor/jquery-scrollbar.min.js"></script>
+<script src="js/vendor/jquery-sortable.min.js"></script>
+<script src="js/vendor/jquery-lists.min.js"></script>
+<script src="js/vendor/jquery-cookies.js"></script>
+<script src="js/vendor/jquery-ui.min.js"></script>
+<script src="js/vendor/jquery-steps.min.js"></script>
+<script src="js/vendor/jquery-visible.min.js"></script>
+<script src="js/core.js"></script>
+
+
+    <script>
+        app.panel();
+    </script>
+
+
+</body>
+
+</html>
